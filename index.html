@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+        }
+        .add {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            margin: 15px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .title {
+            list-style: none;
+            height: 50px;
+            border-bottom: 1px solid #ccc;
+        }
+        .title li {
+            position: relative;
+            float: left;
+            width: 80px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-right: 1px solid #ccc;
+        }
+        .current {
+            border-bottom: 1px solid #fff;
+        }
+        .icon  {
+            position: absolute;
+            line-height: 10px;
+            top: 0;
+            right: 0;
+            background-color: #999;
+            color: #fff;
+            cursor: pointer;
+        }
+        .content {
+            position: relative;
+            height: 350px;
+        }
+        .content section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 340px;
+            display: none;
+        }
+        .content .conactive {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="tab">
+        <p class="add">+</p>
+        <nav class="firstnav">
+            <ul class="title">
+                <li class="current"><span>测试1</span><span class="icon">x</span></li>
+                <li><span>测试2</span><span class="icon">x</span></li>
+                <li><span>测试3</span><span class="icon">x</span></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <section class="conactive">内容1</section>
+            <section>内容2</section>
+            <section>内容3</section>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
